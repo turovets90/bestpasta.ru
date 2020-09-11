@@ -1,0 +1,11 @@
+.idea
+lib/
+inc/
+*.pug
+design/
+src/
+node_modules/
+package.json
+package-lock.json
+webpack.config.js
+
