@@ -13363,3 +13363,30 @@ b,
     padding-bottom: 10px;
   }
 }
+.show_subcat {
+  width: 100%;
+  background: #7ECCC3;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  height: 40px;
+  font-size: 14px;
+  font-family: 'ZonaPro-Bold';
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+@media (min-width: 768px) {
+  .show_subcat {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  #subcat {
+    display: none;
+  }
+}

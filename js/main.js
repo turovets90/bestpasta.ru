@@ -134,6 +134,16 @@ $(document).ready(function(){
         $(this).hide();
     });
 
+    $('.show_subcat').click(function(){
+        if($('#subcat').is(':visible')){
+            $(this).text('Показать подкатегории');
+            $('#subcat').slideUp();
+        }else{
+            $(this).text('Скрыть');
+            $('#subcat').slideDown();
+        }
+    });
+
 });
 
 
