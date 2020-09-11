@@ -11834,7 +11834,8 @@ footer .social_box .social_menu li a {
   display: inline-block;
 }
 footer .social_box .social_menu li a .icon,
-footer .social_box .social_menu li a svg {
+footer .social_box .social_menu li a svg,
+footer .social_box .social_menu li a img {
   position: absolute;
   top: 0;
   right: 0;
@@ -12108,7 +12109,8 @@ footer .social_box .social_menu li a svg {
   position: relative;
 }
 .product_info .social_share a span,
-.product_info .social_share a svg {
+.product_info .social_share a svg,
+.product_info .social_share a img {
   position: absolute;
   top: 0;
   right: 0;
