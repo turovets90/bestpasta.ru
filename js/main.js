@@ -88,7 +88,7 @@ $(document).ready(function(){
         var c_menu_height = $('.c_menu_box').outerHeight();
         $('.sub_menu_box').css({
             'left': c_menu_width+'px',
-            'height': c_menu_height+'px',
+            //'height': c_menu_height+'px',
         });
     });
     $(window).resize();
@@ -102,7 +102,7 @@ $(document).ready(function(){
         asNavFor: '.product_slider_nav'
     });
     $('.product_slider_nav').slick({
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.product_slider',
         dots: false,
