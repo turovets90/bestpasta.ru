@@ -84,10 +84,15 @@ $(document).ready(function(){
 
 
     $(window).resize(function(){
-        var c_menu_width = $('.c_menu_box').outerWidth();
-        var c_menu_height = $('.c_menu_box').outerHeight();
+        var c_menu_width = $('.c_menu_body').outerWidth();
+        var c_menu_top = $('.c_menu_box').offset().top;
+        var c_menu_left = $('.c_menu_box').offset().left;
+        var m_width = 1375 - c_menu_width;
+        var m_left = c_menu_width + c_menu_left;
         $('.sub_menu_box').css({
-            'left': c_menu_width+'px',
+            'left': m_left+'px',
+            'top': c_menu_top+'px',
+            'max-width':m_width+'px'
             //'height': c_menu_height+'px',
         });
     });

@@ -9806,6 +9806,11 @@ header {
 .bottommenu li {
   padding: 0 30px;
 }
+@media (max-width: 1200px) {
+  .bottommenu li {
+    padding: 0 15px;
+  }
+}
 @media (max-width: 1100px) {
   .bottommenu li {
     width: 100%;
@@ -10084,10 +10089,12 @@ main {
 }
 .main_slider .slider_item {
   position: relative;
+  text-align: center;
 }
 .main_slider .slider_item a {
   display: inline-block;
   position: relative;
+  text-align: center;
 }
 .main_slider .slider_item a img {
   display: inline-block;
@@ -10166,16 +10173,7 @@ main {
 }
 .c_menu_box {
   border-radius: 3px;
-}
-@media (max-width: 1200px) {
-  .c_menu_box {
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 767px) {
-  .c_menu_box {
-    margin-bottom: 20px;
-  }
+  position: relative;
 }
 .c_menu_box .c_menu_head {
   display: flex;
@@ -10183,7 +10181,7 @@ main {
   align-items: center;
   -webkit-align-items: center;
   height: 50px;
-  padding: 10px 30px;
+  padding: 10px 15px;
   background: #9FDED7;
   font-size: 18px;
   font-family: 'ZonaPro-Bold';
@@ -10191,9 +10189,11 @@ main {
   -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .c_menu_box .c_menu_head {
-    pointer-events: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
   }
 }
 @media (max-width: 1200px) {
@@ -10214,6 +10214,7 @@ main {
 }
 .c_menu_box .c_menu_body {
   background: #fff;
+  display: none;
   -webkit-border-radius: 0 0 3px 3px;
   -moz-border-radius: 0 0 3px 3px;
   border-radius: 0 0 3px 3px;
@@ -10221,6 +10222,15 @@ main {
 @media (max-width: 767px) {
   .c_menu_box .c_menu_body {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .c_menu_box .c_menu_body {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+    min-width: 300px;
   }
 }
 .c_menu_box .c_menu_body .c_menu {
@@ -10361,7 +10371,7 @@ main {
 }
 @media (min-width: 768px) {
   .c_menu_box .c_menu_body .sub_menu_box {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 15px;
     z-index: 99;
@@ -13357,6 +13367,22 @@ b,
 }
 @media (max-width: 767px) {
   #subcat {
+    display: none;
+  }
+}
+header .bottom_box_flex .c_menu_box {
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  header .bottom_box_flex .c_menu_box {
+    display: none;
+  }
+}
+.mobile_catalog {
+  padding: 20px 15px;
+}
+@media (min-width: 768px) {
+  .mobile_catalog {
     display: none;
   }
 }
