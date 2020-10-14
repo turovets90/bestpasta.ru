@@ -1028,6 +1028,9 @@ main{
     font-size: 18px;
     font-family: @ZonaPro-Bold;
     .border-radius(3px 3px 0 0);
+    @media (max-width:991px){
+      font-size: 16px;
+    }
     @media (max-width:767px){
       .border-radius(3px);
     }
@@ -1042,6 +1045,9 @@ main{
       text-transform: uppercase;
       font-size: 18px;
       font-family: @ZonaPro-Bold;
+      @media (max-width:991px){
+        font-size: 16px;
+      }
       &.icon{
           display: inline-block;
         margin-right: 15px;
@@ -3848,4 +3854,34 @@ header{
 }
 .field{
   margin-bottom: 20px;
+}
+
+.c_menu_group{
+  .flex();
+  .ai-center();
+  @media (min-width:768px){
+    padding-right: 10px;
+  }
+  @media (max-width:767px){
+    .wrap();
+  }
+  .c_menu_box{
+
+    +.c_menu_box{
+      @media (min-width:768px){
+        margin-left: 30px;
+      }
+    }
+    @media (max-width:767px){
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+.c_menu_box.c_menu_box2 .c_menu_body .sub_menu_box .sub_menu > li{
+  @media (min-width:1200px){
+    width: 33.33%;
+  }
 }
